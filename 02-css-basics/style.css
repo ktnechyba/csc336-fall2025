@@ -180,7 +180,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: dotted black;
+    border: 5px dotted black;
     border-radius: 2%;
     padding-bottom: 2vh;
     margin-bottom: 1vw;
