@@ -106,6 +106,10 @@ nav a{
     transform: scale(1.2);
 }
 
+.card p {
+    text-align: left;
+}
+
 /* alternatives */
 #alternatives-section {
     display: flex;
