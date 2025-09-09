@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(hwb(33 77% 0%), mistyrose,thistle );
+    margin: 1vw 1vh;
+}
+
+p {
+    text-align: center;
+}
+
+.headings {
+    text-align: center;
+    font-family:"Cinzel",Georgia, 'Times New Roman', Times, serif;
+}
+
+/* return home */
+#return-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 2vh;
+    margin-bottom: 2vh;
+}
+
+button {
+    background-color: #543A17; 
+    border-radius: 15px; border: 2px;
+    width: 30vw;
+    height: 7vh;
+}
+
+button a{
+    text-decoration: none; 
+    color: white; 
+    font-family: serif;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #543a178a; 
+    border: inset #543A17;
+}
+
+/* alternative cards  */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4vh;
+}
+
+.alternatives {
+    width: 30vw;
+    padding: 1vw 2vh;
+    margin: 1vw 2vh;
+    background-color: rgba(128, 132, 240, 0.27);
+    border-radius: 5%;
+    border-color: rgba(0, 0, 0, 0.329);
+    border: double;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.444);
+    text-align: center;
+}
+
+.alternatives ul {
+    text-align: left;
+}
+
+.alternatives:hover {
+    transform: scale(1.1);
+}
+
+img {
+    border-radius: 100%;
+    width: 16vw;
+    border: rgba(0, 0, 0, 0.419) solid;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #cfabce;
+    padding: 1vw 2vh;
+}
