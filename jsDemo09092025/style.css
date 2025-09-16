@@ -1,0 +1,34 @@
+.demo-box {
+    padding: 5vw 5vh;
+    border-radius: 5em;
+    margin: 5vh;
+    text-align: center;
+    border: double black;
+}
+
+.og-color {
+    background-color: thistle;
+}
+
+.button-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 20vw;
+    height: 10vh;
+    border: inset black;
+    background-color: sandybrown;
+    border-radius: 5em;
+}
+
+button:hover {
+    background-color: white;
+    border:double sandybrown;
+}
+
+.color-coral {
+    background-color: lightcoral;
+}
