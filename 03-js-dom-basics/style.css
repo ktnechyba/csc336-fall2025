@@ -50,7 +50,7 @@ header button:hover {
     height: 100%;
 }
 #black-cat {
-    z-index: 1;
+    z-index: 99;
     width: 274px;
     position: absolute;
 
