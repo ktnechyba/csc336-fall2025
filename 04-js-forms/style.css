@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(lavenderblush, mistyrose,peachpuff);
+}
+
+h1 {
+    background-color: floralwhite;
+    width: 100%;
+    padding: 2vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#cat-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 2vh;
+    border-radius: 20px;
+    border: double palevioletred;
+    background-color: color-mix(in xyz, thistle 36%, aliceblue 64%);
+    box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2);
+    margin-bottom: 2vh;
+}
+
+label {
+    width: 20vw;
+}
+
+input {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+}
+
+input[type=text]{
+    padding-right: 20px;
+    width: 70%;
+}
+
+button {
+    width: 75%;
+    margin: 1vh;
+}
+
+.error {
+    color: red;
+}
+
+.cat-owner h3, .none-owned h3 {
+    border-bottom: dotted mintcream;
+    text-align: center;
+    text-shadow: mintcream 1px 0 20px;
+}
+
+.cat-owner {
+    background-color: mintcream;
+    text-align: center;
+    width: 20vw;
+    height: 20vh;
+    border: inset black;
+    margin: 2vh;
+    border-radius: 12px;
+    box-shadow: 8px 4px 8px 0 rgb(189, 78, 115);
+}
+
+.cat-owner:hover {
+    background-color:palevioletred;
+    transition: .5s;
+}
+
+.none-owned {
+    text-align: center;
+    width: 20vw;
+    height: 20vh;
+    border: inset black;
+    background-color:mintcream;
+    margin: 2vh;
+    border-radius: 12px;
+    box-shadow: 8px 4px 8px 0 rgb(95, 180, 191);
+
+}
+
+.none-owned:hover {
+    background-color:powderblue;
+    transition: .5s;
+}
+
+#form-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#has {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#has-not {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

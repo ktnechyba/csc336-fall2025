@@ -1,0 +1,9 @@
+/* .dice-roll {
+    background-color: thistle;
+    font-weight: bolder;
+} */
+
+.stats {
+    display: flex;
+    gap: 40px;
+}

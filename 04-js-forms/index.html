@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Has Cats?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Who Has Cats?</h1>
+    
+    <div id="cat-form">
+        <h2>Do You Have Any Cats?</h2>
+        <form>
+            <label for="enter-name">Name:</label>
+            <input type="text" id="enter-name">
+            <div id="name-error" class="error"></div>
+
+            <fieldset id="has-cats">
+                <legend>Do you have any cats?</legend>
+                <label for="no-cats">
+                    <input type="radio" name="have-cats" value="no" id="no-cats">
+                    No
+                </label>
+                
+                <label for="yes-cats">
+                    <input type="radio" name="have-cats" value="yes" id="yes-cats">
+                    Yes
+                </label>  
+            </fieldset>
+            <div id="have-cats-error" class="error"></div>
+
+            <label for="number-cats">How many cats do you have?</label>
+            <input type="number" id="number-cats" value="0">
+            <div id="num-cats-error" class="error"></div>
+
+            <fieldset id="allergic-cats">
+                <legend>Are you allergic to cats?</legend>
+                <label for="yes-allergic">
+                    <input type="radio" name="allergy" value="true" id="yes-allergic">
+                    True
+                </label>
+                
+                <label for="no-allergic">
+                    <input type="radio" name="allergy" value="false" id="no-allergic">
+                    False
+                </label>
+            </fieldset>
+            <div id="have-allergies-error" class="error"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="form-display">
+        <div id="has">
+            <h2>Has Cats</h2>
+        </div>
+        
+        <div id="has-not">
+            <h2>Doe Not Have Cats</h2>
+        </div>
+    </div>
+
+    <div id="calculations"></div>
+</body>
+</html>
