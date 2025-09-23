@@ -56,44 +56,6 @@ button {
     color: red;
 }
 
-.cat-owner h3, .none-owned h3 {
-    border-bottom: dotted mintcream;
-    text-align: center;
-    text-shadow: mintcream 1px 0 20px;
-}
-
-.cat-owner {
-    background-color: mintcream;
-    text-align: center;
-    width: 20vw;
-    height: 20vh;
-    border: inset black;
-    margin: 2vh;
-    border-radius: 12px;
-    box-shadow: 8px 4px 8px 0 rgb(189, 78, 115);
-}
-
-.cat-owner:hover {
-    background-color:palevioletred;
-    transition: .5s;
-}
-
-.none-owned {
-    text-align: center;
-    width: 20vw;
-    height: 20vh;
-    border: inset black;
-    background-color:mintcream;
-    margin: 2vh;
-    border-radius: 12px;
-    box-shadow: 8px 4px 8px 0 rgb(95, 180, 191);
-
-}
-
-.none-owned:hover {
-    background-color:powderblue;
-    transition: .5s;
-}
 
 #form-display {
     display: flex;
@@ -109,6 +71,7 @@ button {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 #has {
@@ -124,4 +87,63 @@ button {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.cat-owner h3, .none-owned h3 {
+    border-bottom: dotted mintcream;
+    text-align: center;
+    text-shadow: mintcream 1px 0 20px;
+}
+
+.cat-owner, .none-owned {
+    background-color: mintcream;
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+    width: 20vw;
+    height: 20vh;
+    border: inset black;
+    margin: 2vh;
+    border-radius: 12px;
+    z-index: 0;
+}
+
+.cat-owner::before { /*purely a css element, not adding html at all*/
+    content: ''; /*required or flow won't render*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:0%;
+    background-color: palevioletred;
+    z-index: -1;
+    transition: height .5s ease-in-out;
+    border-radius: inherit;
+}
+
+/*have change height on ::before only when parent is hovered*/
+.cat-owner:hover::before, .none-owned:hover::before { 
+    height: 100%;
+}
+
+.cat-owner:hover {
+    box-shadow: 8px 4px 8px 0 rgb(189, 78, 115);
+    transition: .5s;
+}
+.none-owned::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:0%;
+    background-color: powderblue;
+    z-index: -1;
+    transition: height .5s ease-in-out;
+    border-radius: inherit;
+}
+.none-owned:hover {
+    box-shadow: 8px 4px 8px 0 rgb(95, 180, 191);
+    transition: .5s;
 }
