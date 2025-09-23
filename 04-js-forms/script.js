@@ -152,7 +152,8 @@ function addNewPerson() {
         allergic: allergyInput
     }
     cats_owned.push(newPerson);
-
+    let form = document.querySelector("form");
+    form.reset();
     populateFormDisplay();
 
 };
