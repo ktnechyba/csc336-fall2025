@@ -56,6 +56,9 @@ button {
     color: red;
 }
 
+#has-cats-chart {
+    width:30vw;
+}
 
 #form-display {
     display: flex;

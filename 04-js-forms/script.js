@@ -26,6 +26,10 @@ let cats_owned = [
     }
 ];
 
+//get data on how many do and don't have cats
+let numHas = 0;
+let numHasnt = 0;
+
 function populateFormDisplay(){
     let has_results= document.querySelector("#has");
     let hasNot_results = document.querySelector("#has-not");
@@ -33,14 +37,19 @@ function populateFormDisplay(){
     hasNot_results.innerHTML="";
     has_results.innerHTML="";
 
+    //reset numbers so we don't add the same people again
+    numHas = 0;
+    numHasnt = 0;
     for (let person of cats_owned) {
         if (person.have_cats=="yes"){
             let personHTML = createPersonCard(person, "cat-owner");
             has_results.innerHTML +=personHTML;
+            numHas+=1;
             
         } else{
             let personHTML = createPersonCard(person, "none-owned");
             hasNot_results.innerHTML +=personHTML;
+            numHasnt+=1
         }
     }
 };
@@ -157,3 +166,47 @@ function addNewPerson() {
     populateFormDisplay();
 
 };
+
+//get x and y values for chart
+const xValues = ["Has Cats", "Doesn't Have Cats"];
+const yValues = [numHas, numHasnt];
+
+//colors of the pi chart
+const barColors = ['rgb(189, 78, 115)',
+    'rgb(95, 180, 191)'];
+
+const ctx = document.getElementById('has-cats-chart');
+
+let pieChart = new Chart(ctx, {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {display:true},
+      title: {
+        display: true,
+        text: "How Many People Own Cats?",
+        font: {size:16}
+      }
+    }
+  }
+});
+
+// Dynamically update the chart
+setInterval(function () {
+
+    // array with updated values
+    let updatedData = [numHas,numHasnt];
+
+    // Update the chart object
+    pieChart.data.datasets[0].data = updatedData;
+    
+    // Update the chart
+    pieChart.update();
+}, 200);

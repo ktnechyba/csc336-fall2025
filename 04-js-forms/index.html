@@ -6,6 +6,10 @@
     <title>Who Has Cats?</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <!--I want to add a chart so this is the js library to use-->
+    <script src="
+            https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
 </head>
 <body>
     <h1>Who Has Cats?</h1>
@@ -51,7 +55,12 @@
 
             <button type="submit">Submit</button>
         </form>
+    </div>    
+
+    <div id="calculations">
+        <canvas id="has-cats-chart"></canvas>
     </div>
+    
     <div id="form-display">
         <div class="card-organization">
             <h2>Has Cats</h2>
@@ -69,6 +78,6 @@
 
     </div>
 
-    <div id="calculations"></div>
+
 </body>
 </html>
