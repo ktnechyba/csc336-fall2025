@@ -13,12 +13,6 @@ nav {
     position: sticky;
 }
 
-/* #home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 nav a {
     text-decoration: none;
     color: black;
@@ -159,7 +153,6 @@ input {
 footer {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     justify-content: center;
 }
 footer p {

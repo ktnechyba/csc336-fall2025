@@ -2,7 +2,7 @@
 let cat_buttons = document.querySelectorAll('input[name="cats"]');
 cat_buttons.forEach(function(but) {
     but.addEventListener("click", function(){
-        document.querySelectorAll('.card img').forEach(img => {
+        document.querySelectorAll('.card img').forEach(function(img) {
             img.style.border = 'double black 12px';
         });
         if (this.checked == true){
@@ -61,7 +61,6 @@ function success(e){
         alert("Need to select a cat to vote!")
         return;
     } else {
-        console.log("why")
         voted= true;
         let label = selectedRadio.closest('.card');
         if (label) {
