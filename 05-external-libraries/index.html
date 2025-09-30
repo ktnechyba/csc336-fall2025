@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat's Meow</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="home">
+                <a href="#"><h1><img src="images/cat-logo.png" alt="" id="logo"> The Cat's Meow</h1></a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#about-section">About</a>
+                <a href="#top-dishes-section">Top Dishes</a>                
+                <a href="#cat-wall">Cat Wall</a>
+                <a href="#hours-section">Hours</a>
+            </div>
+        </nav>
+    </header>
+    <div id="about-section" class="sections">
+        <div id="about-images">
+            <img src="images/cafe-background.jpg" alt="">
+        </div>
+        <div id="about-information">
+            <h2>About The Cat's Meow</h2>
+            <p>The Cat's Meow is a small, cozy cafe named after the owner's deep love of cats. It has various cat themed foods to satisfy any appetite! All dishes are made in house, and all ingredients are sourced locally. Additionally, we make our own jam and jelly, which you can buy at the farmers market. Come stop by and say hello!</p>
+            <p>Every month there's a special drink dedicated to our famous cat of the month! Any cat on our cat wall is elligible to become Cat of the Month! We welcome any submissions to our cat wall!</p>
+        </div>
+    </div>
+    <div id="top-dishes-section" class="sections">
+        <h2>Our Top Dishes</h2>
+        <div id="top-dishes">
+            <div class="dishes">
+                <img src="images/brownie-icecream.jpg" alt="Plate with a scoop of vanilla ice cream, a brownie in the shape of a pawprint, and a cat cookie">
+                <h3>The Purrr-fect Brownie</h3>
+                <p>A delicious dark chocolate brownie with a scoop of vanilla ice cream and vanilla cookie.</p>
+            </div>
+            <div class="dishes">
+                <img src="images/cat-latte.jpg" alt="A latte with foamed milk shaped like a cat.">
+                <h3>CAT-puccino</h3>
+                <p>A sweet and sharp caramel hazelnut latte with foam milk!</p>
+            </div>
+            <div class="dishes">
+                <img src="images/cat-sandwich.jpg" alt="Sandwich with lettuce and tomato and turkey cut out in the shape of a cat head">
+                <h3>Clawsome Calico</h3>
+                <p>Pumpernickel and rye bread with lettuce, tomato, turkey, and our secret sauce!</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="cat-wall" class="sections">
+        <h2>Cat Wall</h2>
+        <p>The cat wall showcases cats from our staff and customers! Every month we have a poll to select the cat of the month!</p>
+        <div id="cat-of-month">
+            <h3 id="month-title">Cat of the Month</h3>
+            <img src="images/persephone.jpg" alt="">
+            <h4>Persephone</h4>
+        </div>
+        <h3>Vote by selecting a cat!</h3>
+        <form>
+            <div id="wall">
+                <label for="cat1" class="card">
+                    <input type="radio" id="cat1" class="cats" name="cats"></input>
+                    <img src="images/cat1.jpg" alt=""><h4>Nana</h4>
+                </label>
+                <label class="card" for="cat2">
+                    <input type="radio" id="cat2" class="cats" name="cats"></input>
+                    <img src="images/cat2.jpg" alt=""><h4>Momo</h4>
+                </label>
+                <label class="card" for="cat3">
+                    <input type="radio" id="cat3" class="cats" name="cats"></input>
+                    <img src="images/cat3.jpg" alt=""><h4>Mr. Squish</h4>
+
+                </label>
+                <label class="card" for="cat4">
+                    <input type="radio" id="cat4" class="cats" name="cats"></input>
+                    <img src="images/cat4.jpg" alt=""><h4>Reeses Puffs</h4>
+                </label>
+                <label class="card" for="cat6">
+                    <input type="radio" id="cat6" class="cats" name="cats"></input>   
+                    <img src="images/cat6.jpg" alt=""><h4>Moose</h4> 
+                </label>
+            </div>
+            <button id="vote" type="submit">Vote!</button>
+        </form>
+    </div>
+    <div id="hours-section" class="sections">
+        <h2>Our Hours</h2>
+        <p><u>Regular Hours</u>
+            <ul>
+                <li>Mon-Fri: 7:00 AM - 4:00 PM</li>
+                <li>Sat-Sun: 10:00 AM - 6:00 PM</li>
+            </ul>
+        </p>
+
+        <p><u>Zoomies After Hours - Delivery </u>
+            <ul>
+                <li>Mon-Fri: 7:00 PM - 1:00 AM</li>
+                <li>Sat: 8:00 PM - 3:00 AM</li>
+            </ul>
+        </p>
+
+    </div>
+    <hr>
+    <footer>
+        <h2>The Cat's Meow</h2>
+        <hr id="split">
+
+        <p>Designed by Katherine</p>
+        <a href='https://pngtree.com/freepng/cartoon-cat-cute-kitten-kitty-sticker_9029329.html'>Cat logo image from pngtree.com/</a>
+        <a href="https://www.vecteezy.com/free-photos/cozy-coffee-cafe">Cozy Coffee Cafe Stock photo by Vecteezy</a>    </footer>
+</body>
+</html>

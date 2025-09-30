@@ -1,0 +1,21 @@
+#ahh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    width: 30vw;
+    height: 20vh;
+    background-color: plum;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: double thistle;
+    border-radius: 25px;
+    margin: 2vh;
+}
+
+canvas {
+    border: double palevioletred;
+}

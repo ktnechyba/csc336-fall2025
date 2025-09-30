@@ -1,0 +1,177 @@
+body {
+    font-family: "Playfair Display", serif;
+    font-size: medium;
+    background-color: white;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Smooch Sans", sans-serif;;
+    font-size: xx-large;
+    position: sticky;
+}
+
+/* #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    width: 1em;
+    align-self: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.nav-links a{
+    margin: 1em;
+}
+
+.nav-links a:hover{
+    color: #B0D8CB;
+}
+
+h2 {
+    font-family: "Smooch Sans", sans-serif;;
+    font-size: xx-large;
+}
+
+h3 {
+    font-family: "Smooch Sans", sans-serif;;
+    font-size: x-large;
+}
+
+h4 {
+    font-family: "Smooch Sans", sans-serif;;
+    font-size: large;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#about-images, #about-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+
+    width: 50vw;
+}
+
+#about-images img{
+    width: 100%;
+}
+
+#top-dishes {
+    display: flex;
+    flex-direction: row;
+}
+
+.dishes {
+    width: 20vw;
+    border: double #B0D8CB;
+    padding: 1em;
+    border-radius: 12px;
+    margin: 1em;
+    background-color: white;
+}
+
+.dishes img {
+    width: 20vh;
+}
+
+#cat-of-month {
+    border: inset #B0D8CB;
+    padding: 1em;
+    margin: 1vh;
+    background-color: white;
+    width: 15em;
+    border-radius: 12px;
+}
+#cat-of-month img {
+    width: 12em;
+    border: double black 12px;
+}
+
+#wall {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1vh;
+}
+
+input {
+    display: none;
+}
+
+.card img{
+    width: 15em;
+    border: double black 12px;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
+#vote {
+    background-color: #F8C37F;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 12px;
+    font-family: "Smooch Sans", serif;
+    font-size: xx-large;
+}
+
+#vote:hover {
+    background-color: #dead6c;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+}
+footer p {
+    text-align: center;
+}
+#split {
+    width: 100%;
+    border: 3px dotted #B0D8CB;
+    border-bottom: 0cm;
+}
+
+footer a {
+    justify-self: center;
+    align-self: center;
+}
