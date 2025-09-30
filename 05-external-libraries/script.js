@@ -50,11 +50,11 @@ const defaults = {
 
 function success(e){
     e.preventDefault();
+    const selectedRadio = document.querySelector('input[name="cats"]:checked');
     if (voted){
-        alert("You've already voted!")
+        alreadyVoted();
         return;
     }
-    const selectedRadio = document.querySelector('input[name="cats"]:checked');
 
     if (!selectedRadio) {
         //show error 
@@ -79,4 +79,12 @@ function success(e){
           });
     
     }
+}
+
+function alreadyVoted(){
+    Swal.fire({
+        title: "Congratulations!",
+        text: "You've already voted for a cat!",
+        confirmButtonText: 'OK'
+    })
 }
