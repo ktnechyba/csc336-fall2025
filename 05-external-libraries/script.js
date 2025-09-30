@@ -3,7 +3,7 @@ let cat_buttons = document.querySelectorAll('input[name="cats"]');
 cat_buttons.forEach(function(but) {
     but.addEventListener("click", function(){
         document.querySelectorAll('.card img').forEach(img => {
-            img.style.border = 'double white 12px';
+            img.style.border = 'double black 12px';
         });
         if (this.checked == true){
             let label = this.closest('.card');
