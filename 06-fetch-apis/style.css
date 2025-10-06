@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom right,rgba(221,160,221, 0.2),rgba(188,160,188, 0.5), rgba(165,102,139,0.7));
 }
 
 form {
@@ -14,6 +15,7 @@ form {
     width: 50vw;
     margin: 1em;
     padding: 1em;
+    box-shadow: #BCA0BC 0 4px 8px 0;
 }
 
 input {
@@ -105,7 +107,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -128,7 +130,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 #facts-images {
@@ -179,69 +181,73 @@ a {
 
 
 .cats-card {
-    border: inset black 2px;
+    border: dotted #F1BF98 2px;
     margin: 1em;
     padding: 1em;
     border-radius: 14px;
     width: 30vw;
-    background-color: blueviolet;
+    background-color: #074F57;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: #BCA0BC 0 4px 8px 0;
 }
 
 .cats-card img {
-    border: double peachpuff 14px;
+    border: double plum 14px;
     margin: 1em;
 }
 
 .fact-card {
-    border: inset black 2px;
+    border: inset #F1BF98 2px;
     margin: 1em;
     padding: 1em;
     border-radius: 14px;
     width: 30vw;
-    background-color: greenyellow;
+    background-color: #077187;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: #BCA0BC 0 4px 8px 0;
 }
 
 .fact-cat-card {
-    border: inset black 2px;
+    border: dotted #F1BF98 2px;
     margin: 1em;
     padding: 1em;
     border-radius: 14px;
     width: 30vw;
-    background-color: palegoldenrod;
+    background-color: #077187;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: #BCA0BC 0 4px 8px 0;
 }
 
 .fact-cat-card img {
-    border: double papayawhip 14px;
+    border: double plum 14px;
     margin: 1em;
 }
 
 .joke-card {
-    border: inset black 2px;
+    border: dotted #F1BF98 2px;
     margin: 1em;
     padding: 1em;
     border-radius: 14px;
     width: 30vw;
-    background-color: aquamarine;
+    background-color: #74A57F;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: #BCA0BC 0 4px 8px 0;
 }
 
 .joke-card .hide{
@@ -258,20 +264,21 @@ a {
     
 }
 .joke-img-card {
-    border: inset black 2px;
+    border: dotted #F1BF98 2px;
     margin: 1em;
     padding: 1em;
     border-radius: 14px;
     width: 30vw;
-    background-color: beige;
+    background-color: #74A57F;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: #BCA0BC 0 4px 8px 0;
 }
 .joke-img-card img{
-    border: double steelblue 14px;
+    border: double plum 14px;
     margin: 1em;
 }
 .joke-img-card .hide {
@@ -293,8 +300,20 @@ img {
     width: 20vw;
 }
 
+h1 {
+    background-color: #F1BF98;
+    width: 100vw;
+    text-align: center;
+}
+
 h2 {
     text-wrap: wrap;
+}
+
+#split {
+    width: 100%;
+    border: 3px dotted rgb(165,102,139);
+    border-bottom: 0cm;
 }
 
 footer {
