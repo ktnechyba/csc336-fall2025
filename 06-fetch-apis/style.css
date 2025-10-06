@@ -301,7 +301,8 @@ img {
 }
 
 h1 {
-    background-color: #F1BF98;
+    /* background-color: #F1BF98; */
+    text-decoration: underline wavy #F1BF98;
     width: 100vw;
     text-align: center;
 }
