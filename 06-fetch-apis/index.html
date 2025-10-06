@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have a Cat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <form>
+        <h2>Have a cat image!</h2>
+        <label for="num-img" id="num-imgs">
+            How many cat images do you want?
+            <input type="number" name="img-number" id="num-img">
+        </label>
+        <div id="num-imgs-error" class="error"></div>
+
+
+        <fieldset id="cat-facts">
+            <legend>Would you like a cat fact?</legend>
+            <label for="no-fact">
+                <input type="radio" name="fact" id="no-fact">
+                No
+            </label>
+            
+            <label for="yes-fact">
+                <input type="radio" name="fact" value="yes" id="yes-fact">
+                Yes
+            </label>  
+        </fieldset>
+        <div id="want-facts-error" class="error"></div>
+
+
+        <!-- if want facts to link with imgs -->
+        <fieldset id="cat-fact-img">
+            <legend>Do you want the facts displayed in the cat images?</legend>
+            <label for="no-fact-img">
+                <input type="radio" name="fact-img" id="no-fact-img">
+                No
+            </label>
+            
+            <label for="yes-fact-img">
+                <input type="radio" name="fact-img" value="yes" id="yes-fact-img">
+                Yes
+            </label>  
+        </fieldset>
+        <div id="want-facts-img-error" class="error"></div>
+
+
+        <!-- no linkage of facts and igs -->
+        <label for="num-fact" id="num-facts">
+            <input type="number" name="fact-number" id="num-fact">
+            How many cat facts do you want?
+        </label>
+        <div id="num-facts-error" class="error"></div>
+
+
+        <h2 id="have-a-joke"></h2>
+
+        <!-- if want joke to link with imgs -->
+        <fieldset id="cat-joke-img">
+            <legend>Do you want the jokes displayed in the cat images?</legend>
+            <label for="no-joke-img">
+                <input type="radio" name="joke-img" id="no-joke-img">
+                No
+            </label>
+            
+            <label for="yes-joke-img">
+                <input type="radio" name="joke-img" value="yes" id="yes-joke-img">
+                Yes
+            </label>  
+        </fieldset>
+        <div id="want-jokes-img-error" class="error"></div>
+
+
+        <!-- no linkage of jokes and igs -->
+        <label for="num-joke" id="num-jokes">
+            <input type="number" name="joke-number" id="num-joke">
+            How many jokes do you want?
+        </label>
+        <div id="num-jokes-error" class="error"></div>
+
+        <button id="form-submission" type="submit">Submit</button>
+    </form>
+    <div class="cat-images-org">
+        <h1>Cat Images</h1>
+        <div class="cat-images">
+
+        </div>
+
+    </div>
+    <div class="facts">
+        <div id="facts-org">
+            <h1>Cat Facts</h1>
+            <div id="facts">
+
+            </div>
+        </div>
+        <div id="facts-images-org">
+            <h1>Cat Facts with Cat Images</h1>
+            <div id="facts-images">
+
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="jokes">
+        <div id="jokes-org">
+            <h1>Jokes</h1>
+            <div id="jokes">
+
+            </div>
+        </div>
+        <div id="jokes-images-org">
+            <h1>Jokes with Cat Images</h1>
+            <div id="jokes-images">
+
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <footer>
+        <p>Designed by Katherine</p>
+        <p>
+            Using <a href="https://github.com/15Dkatz/official_joke_api">Joke API</a>, <a href="https://github.com/wh-iterabb-it/meowfacts">Cat Facts API</a>, and <a href="https://cataas.com/">Cat Images API</a>
+        </p>
+    </footer>
+</body>
+</html>
