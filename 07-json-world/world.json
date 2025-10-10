@@ -1,0 +1,132 @@
+{
+    "regions": [
+        {
+            "name": "Morning Kitty",
+            "climate": "Continental",
+            "towns": [
+                {
+                    "name": "Cold Awakening",
+                    "population": 2,
+                    "notable_people": [
+                        {
+                            "name": "Misty",
+                            "role": "Hangry Kitty Extroardinaire",
+                            "items": [
+                                "strong paws",
+                                "sharp claws",
+                                "loud vocal box"
+                            ]
+                        },
+                        {
+                            "name": "Katherine",
+                            "role": "Tired Food Provider",
+                            "items": [
+                                "glasses",
+                                "lamp",
+                                "scale",
+                                "cat bowl",
+                                {
+                                    "cat food": {
+                                        "brand": "IAms",
+                                        "type": "dry"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Sleepy Satisfaction",
+                    "population": 4,
+                    "notable_people": [
+                        {
+                            "name": "Cato",
+                            "role": "Sleepy, Shy Kitty",
+                            "items": [
+                                "couch pillow",
+                                "mouse toy"
+                            ]
+                        },
+                        {
+                            "name": "Ellie",
+                            "role": "Dependable Catsitter",
+                            "items": [
+                                "phone",
+                                "cat bowl",
+                                {
+                                    "cat food": {
+                                        "brand": "IAms",
+                                        "type": "dry"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Misty Meows",
+                            "role": "Fully Satisfied Kitty",
+                            "items": [
+                                "cat bed in the sun",
+                                "couch blanket",
+                                "comfortable cat carrier"
+                            ]
+                        },
+                        {
+                            "name": "Emma",
+                            "role": "Relaxed Roommate",
+                            "items": [
+                                "cozy sheets",
+                                "full waterbottle",
+                                "comfy pajamas"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Night Cats",
+            "climate": "Tropical",
+            "towns": [
+                {
+                    "name": "Zoomies",
+                    "population": 3,
+                    "notable_people": [
+                        {
+                            "name": "Emm",
+                            "role": "Tired Roommate",
+                            "items": [
+                                "remote",
+                                "bowl of macaroni and cheese",
+                                "homework"
+                            ]
+                        },
+                        {
+                            "name": "Katie",
+                            "role": "Amused Cat Lover",
+                            "items": [
+                                "computer",
+                                "red string",
+                                "homework",
+                                "bowl of macaroni and cheese"
+                            ]
+                        },
+                        {
+                            "name": "Mist",
+                            "role": "Invigorated Cat in Possession of 2 Food Givers",
+                            "items": [
+                                "pink collar",
+                                "small lego car toy",
+                                {
+                                    "dental cat treats": {
+                                        "brand": "Greenies",
+                                        "flavor": "salmon"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
