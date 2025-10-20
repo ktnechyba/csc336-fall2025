@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="data-form"action="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+
+        <label for="favAn">Fav Animal</label>
+        <input type="text" name="favAn">
+
+        <label for="foodpref">Food Preference</label>
+        <input type="text" name="foodpref">
+
+        <button type="submit">Submit!</button>
+    </form>
+
+    <script>
+        let data = document.querySelector("#data-form");
+        data.addEventListener("submit", async (e)=>{
+            e.preventDefault();
+            let formData = new FormData(data);
+
+            let entries = formData.entries();
+
+            // let dataaa = {};
+            // for (let entry of entries){
+
+            //     dataaa[entry[0]] = entry[1];
+            // }
+
+            let dataaa=Object.fromEntries(entries)
+
+            let response = await fetch("/api/add", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(dataaa)
+            })
+            let responseText = await response.json();
+            console.log(responseText.name);
+        })
+    </script>
+</body>
+</html>
