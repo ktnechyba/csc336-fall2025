@@ -2,61 +2,70 @@ async function loadWorld() {
     const res = await fetch("/world");
     const data = await res.json();
 
+
     let peopleNames = document.getElementById("people-names");
+    let worldNames = document.getElementById("world-names");
     let worldDiv = document.getElementById("worldDiv");
+
+
     worldDiv.innerHTML = "<ul></ul>";
     peopleNames.innerHTML = "";
     for (let region of data.regions){
+        //default check if there are any spaces - replace with dashes if there are
+        let space_name = region.name.replaceAll(" ", "-");
+        document.querySelector("#worldDiv ul").innerHTML += `<li id="${space_name}" class="people">${region.name}<ul class="towns"></ul></li>`;
         for (let town of region.towns){
+            //default check if there are any spaces - replace with dashes if there are
+            let town_name = town.name.replaceAll(" ", "-");
+
+            //add the names of the towns to the dropdown
+            worldNames.innerHTML+=`<option value="${town_name}" id="${town_name}option">${town.name}</option>`;
+            
+            //populate screen
+            document.querySelector(`#${space_name} ul`).innerHTML += `<li id="${town_name}" class="people">${town.name}<ul class="people"></ul></li>`;
+
             for (let person of town.notable_people) {
-                //account for spaces in name -> causes problems for id
-                if (person.name.includes(" ")){
-                    let space_name = person.name
-                    peopleNames.innerHTML+=`<option value="${space_name.replaceAll(" ", "-")}" id="${space_name.replaceAll(" ", "-")}option">${person.name}</option>`;
-                    document.querySelector("#worldDiv ul").innerHTML += `<li id="${space_name.replaceAll(" ", "-")}" class="people">${person.name}<ul class="items"></ul></li>`
-                } else{
-                    peopleNames.innerHTML+=`<option value="${person.name}" id="${person.name}option">${person.name}</option>`;
-                    document.querySelector("#worldDiv ul").innerHTML += `<li id="${person.name}" class="people">${person.name}<ul class="items"></ul></li>`
-                }
-                for (let item of person.items){
-                    //make sure to find the correct id to attach the items to
-                    if (person.name.includes(" ")){
-                        let space_name = person.name
-                        if (item.hasOwnProperty("cat food")){
-                            document.querySelector(`#${space_name.replaceAll(" ", "-")} ul`).innerHTML += `<li>cat food - IAms, dry</li>`
-                        } else if(item.hasOwnProperty("dental cat treats")){
-                            document.querySelector(`#${space_name.replaceAll(" ", "-")} ul`).innerHTML += `<li>dental cat treats - Salmon flavored Greenies</li>`
-                        } else {
-                            document.querySelector(`#${space_name.replaceAll(" ", "-")} ul`).innerHTML += `<li>${item}</li>`
-                        }
-                    } else{
-                        if (item.hasOwnProperty("cat food")){
-                            document.querySelector(`#${person.name} ul`).innerHTML += `<li>cat food - IAms, dry</li>`
-                        } else if(item.hasOwnProperty("dental cat treats")){
-                            document.querySelector(`#${person.name} ul`).innerHTML += `<li>dental cat treats - Salmon flavored Greenies</li>`
-                        } else {
-                            document.querySelector(`#${person.name} ul`).innerHTML += `<li>${item}</li>`
-                        }
-                }
+                //default check if there are any spaces - replace with dashes if there are
+                let person_name = person.name.replaceAll(" ", "-");
 
-                }
+                //add names of the people to dropdown
+                peopleNames.innerHTML+=`<option value="${person_name}" id="${person_name}option">${person.name}</option>`;
+                
+                //populate the screen with the names
+                document.querySelector(`#${town_name.replaceAll(" ", "-")} ul`).innerHTML += `<li id="${person_name}" class="people">${person.name}</li>`;
             }
-
         }
 
     }
-    document.querySelector(`#${data.regions[0].towns[0].notable_people[0].name}option`).selected=true;
+
+    //creating default that can't be chosen 
+    let defaultName = document.createElement("option");
+    defaultName.value=''
+    defaultName.innerHTML="Select a Person";
+    defaultName.disabled = true;
+    defaultName.selected=true;
+    //adding to the beginning of the element
+    peopleNames.prepend(defaultName);
+
+    let defaultWorld = document.createElement("option");
+    defaultWorld.value=''
+    defaultWorld.innerHTML="Select a Location";
+    defaultWorld.disabled = true;
+    defaultWorld.selected=true;
+    //adding to the beginning of the element
+    worldNames.prepend(defaultWorld);
 }
+
 
 //run when script loaded
 loadWorld();
 
-let item_addition = document.querySelector("#name-item");
+let world_move = document.querySelector("#name-world");
 
-item_addition.addEventListener("submit", async (e) => {
+world_move.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    let formData = new FormData(item_addition);
+    let formData = new FormData(world_move);
     let formDataObjectForm = Object.fromEntries(formData.entries());
     console.log(formDataObjectForm)
     const res = await fetch("/update", {
@@ -66,6 +75,6 @@ item_addition.addEventListener("submit", async (e) => {
     });
 
     // const update = await res.json();
-    item_addition.reset();
+    world_move.reset();
     loadWorld();
 });

@@ -7,15 +7,18 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    
-    <form id="name-item">
-        <label for="name">Choose a Person to Give an Item to</label>
+    <h1>Studio Ghibli Movies</h1>
+    <form id="name-world">
+        <label for="name">Choose a Person</label>
         <select name="name" id="people-names">
+            <option disabled value="" id="nameDefault"> Select a Person </option>
+        </select>
+        <label for="world">Choose a Location to Move the Person to</label>
+        <select name="world" id="world-names">
+            <option disabled value="" id="worldDefault"> Select a Location </option>
 
         </select>
-        <label for="item"></label>
-        <input type="text" name="item">
-        <button type="submit">Add Item</button>
+        <button type="submit">Move Person</button>
     </form>
     <div id="worldDiv"></div>
 </body>

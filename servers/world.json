@@ -1,0 +1,237 @@
+{
+    "regions": [
+        {
+            "name": "Castle in the Sky",
+            "climate": "Continental",
+            "towns": [
+                {
+                    "name": "The Saturn",
+                    "population": 30,
+                    "notable_people": [
+                        {
+                            "name": "Sheeta",
+                            "role": "Descendant of the Toel family",
+                            "items": [
+                                "Crystal Pendant",
+                                "Red Headband"
+                            ]
+                        },
+                        {
+                            "name": "Colonel Muska",
+                            "role": "Intelligence Agent",
+                            "items": [
+                                "Notebook",
+                                "Ancient Documents",
+                                "Gun",
+                                [
+                                    {
+                                        "name": "Sunglasses",
+                                        "type": "brand"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Tiger Moth",
+                    "population": 9,
+                    "notable_people": [
+                        {
+                            "name": "Dola",
+                            "role": "Leader of Tiger Moth Air Pirates",
+                            "items": [
+                                "Abacus",
+                                "Goggles",
+                                "Bazooka",
+                                {
+                                    "name": "Hat",
+                                    "type": "Dark Blue Derby Hat"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Henri",
+                            "role": "Dola's Youngest Son",
+                            "items": [
+                                "Goggles",
+                                "Bazooka",
+                                "Satchel"
+                            ]
+                        },
+                        {
+                            "name": "Charles",
+                            "role": "Dola's Oldest Son",
+                            "items": [
+                                "Pudding",
+                                "Bazooka",
+                                "Goggles"
+                            ]
+                        },
+                        {
+                            "name": "Louis",
+                            "role": "The Middle Child",
+                            "items": [
+                                "Minced Meat Pies",
+                                "Bazooka",
+                                "Goggles",
+                                {
+                                    "name": "Hat",
+                                    "type": "White Top Hat"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Motro",
+                            "role": "Veteran Engineer",
+                            "items": [
+                                "Glasses",
+                                "Wrench",
+                                "Screwdriver"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Laputa",
+                    "population": 1,
+                    "notable_people": [
+                        {
+                            "name": "Robot",
+                            "role": "Kind Caregiver of the Flora and Fauna",
+                            "items": [
+                                "Acorn",
+                                "Flowers"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Slag Ravine",
+                    "population": 200,
+                    "notable_people": [
+                        {
+                            "name": "Pazu",
+                            "role": "apprentice machinist ",
+                            "items": [
+                                "Trumpet",
+                                {
+                                    "name": "Hat",
+                                    "type": "Yellow Fisherman Cap"
+                                },
+                                "Brown Vest"
+                            ]
+                        },
+                        {
+                            "name": "Duffi",
+                            "role": "Mine Boss",
+                            "items": [
+                                {
+                                    "name": "Hat",
+                                    "type": "Green Paperboy Hat"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Uncle Pom",
+                            "role": "Eccentric Mine Wanderer",
+                            "items": [
+                                "Shovels",
+                                "Kettle"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Nausicaä of the Valley of the Wind",
+            "climate": "Desert",
+            "towns": [
+                {
+                    "name": "Valley of the Wind",
+                    "population": 150,
+                    "notable_people": [
+                        {
+                            "name": "Nausicaä",
+                            "role": "Princess of the Valley of the Wind",
+                            "items": [
+                                "Glider",
+                                "Control Stone",
+                                "Chiko Nuts",
+                                "Goggles",
+                                "Shohkia Mask",
+                                "Zirconian Ceramic Sword",
+                                "Insect Charm"
+                            ]
+                        },
+                        {
+                            "name": "Yupa Miralda",
+                            "role": "Explorer and Great Swordsman",
+                            "items": [
+                                "Brown Cloak",
+                                "Shohki Mask",
+                                "Gun"
+                            ]
+                        },
+                        {
+                            "name": "Jhil",
+                            "role": "King of the Valley of the Wind",
+                            "items": [
+                                "Sword"
+                            ]
+                        },
+                        {
+                            "name": "Grandmother",
+                            "role": "Great Elder",
+                            "items": [
+                                "Khotosh Herb",
+                                "Cauldron"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Pejite",
+                    "population": 70,
+                    "notable_people": [
+                        {
+                            "name": "Asbel",
+                            "role": "Prince of Pejite",
+                            "items": [
+                                "Brown Jacket",
+                                {
+                                    "name": "Hat",
+                                    "type": "Brown Aviator Hat"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Torumekia",
+                    "population": 300,
+                    "notable_people": [
+                        {
+                            "name": "Kushana",
+                            "role": "Imperial Princess of Torumekia",
+                            "items": [
+                                "God Warrior Embryo",
+                                "Gold Armor",
+                                "Gun"
+                            ]
+                        },
+                        {
+                            "name": "Kurotawa",
+                            "role": "Kushana's Aide",
+                            "items": [
+                                "Blue Cape",
+                                "Gun"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
