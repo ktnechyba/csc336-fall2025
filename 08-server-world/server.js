@@ -1,11 +1,15 @@
 import express from "express";
 import fs from "fs";
+import cors from "cors"
+
 
 const app = express();
 
 app.use(express.static("public"));
 
 app.use(express.json());
+
+app.use(cors()); //necessary in order to allow people to access your api -> need to npm install
 
 app.get("/world", async (req, res) => {
     const dataString = await fs.readFileSync("world.json", "utf-8");
