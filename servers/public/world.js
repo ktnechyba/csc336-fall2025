@@ -30,7 +30,7 @@ async function setup(){
 }
 
 function draw(){
-    background(frameCount%360, 100, 100);
+    // background(frameCount%360, 100, 100);
     for (let name in people){
         let person = people[name];
         person.update();
