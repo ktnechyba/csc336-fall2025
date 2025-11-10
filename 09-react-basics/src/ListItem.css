@@ -1,0 +1,35 @@
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #996888;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 20px;
+    border: double black;
+}
+
+li:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 2px 4px 0 rgb(189, 78, 115);
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+button {
+    background-color: #d8e2dc;
+    border: dotted black 2px;
+    border-radius: 10px;
+    width: 12vw;
+    margin: .5em;
+}
+
+button:hover {
+    background-color: #f4acb7;
+}
