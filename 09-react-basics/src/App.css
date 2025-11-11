@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
 html {
-  background-image: url("assets/baking.jpg");
+  background-image: linear-gradient(27deg,rgba(120, 18, 55, 0.8) 0%, rgba(199, 87, 158, 0.7) 50%, rgba(255, 158, 229, 0.6) 100%),url("assets/baking.jpg");
 }
 
-h1, h2 {
+h1{
   font-family: "Amita", serif;
   font-size: xx-large;
+}
+
+h2{
+  font-family: "Amita", serif;
+  font-size: x-large;
 }
 
 input {
@@ -26,7 +31,7 @@ div {
 }
 
 #form {
-  background-color: #031D44;
+  background-image: linear-gradient(27deg,rgba(120, 18, 55, 1) 0%, rgba(4, 29, 68, 1) 50%, rgba(173, 69, 146, 1) 100%);
   padding: 2em;
   border-radius: 10px;
   border: inset black;
@@ -46,5 +51,5 @@ ul {
 }
 
 #content {
-  width: 70vw;
+  width: 90vw;
 }  

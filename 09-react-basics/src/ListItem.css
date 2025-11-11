@@ -4,11 +4,15 @@ li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #996888;
+    background-color: #3E163B;
     margin: 2em;
     padding: 2em;
     border-radius: 20px;
-    border: double black;
+    border: double #7e3078 5px;
+    color: white;
+    width: 28vw;
+    /* overflow: hidden;
+    white-space: wrap; */
 }
 
 li:hover {
@@ -24,10 +28,11 @@ div {
 
 button {
     background-color: #d8e2dc;
-    border: dotted black 2px;
+    border: double white 2px;
     border-radius: 10px;
     width: 12vw;
     margin: .5em;
+    margin-top: 1em;
 }
 
 button:hover {

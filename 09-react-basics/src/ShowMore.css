@@ -1,4 +1,17 @@
+#description {
+    border: solid white 2px;
+    margin: .5em;
+    border-radius: 30px 10px 30px 10px;
+    background-color: #f4acb7;
+    width: 22em;
+    overflow-wrap: break-word;
+    padding-right: 1.5em;
+}
+
 p {
-    /* background-color: aliceblue; */
     padding: 1em;
+    
+    color: black;
+    text-align: center;
+    width: inherit;
 }
