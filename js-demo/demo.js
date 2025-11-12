@@ -47,4 +47,6 @@ let newArray = numbers.map((element)=> element+10); //add 10 to each element and
 
 //npm run dev = run the react
 
-//dist folder is the live project you can upload to run online -> eed to npm run build
+//dist folder is the live project you can upload to run online -> need to npm run build, add "/" to the index links
+
+///npm install react router dom

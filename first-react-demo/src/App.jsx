@@ -1,27 +1,30 @@
 import { useState } from 'react'
 import TodoItem from "./TodoItem"
+import TodoJSON from "./data.json"
 
 function App() {
   //state pattern data binding
   const [x, setx] = useState(10); //usestate returns an array with the variable and the function to call when want to change the variable
   const [name, setName] = useState("mike");
   const [task, setTask] = useState(""); 
-  const [todos, setTodos] = useState([
-    {
-      task: "Eat Dinner",
-      complete: false,
-      id: 1
-    },
-    {
-      task: "Pet Cat",
-      complete: true,
-      id: 2
-    },
-    {
-      task: "Beat Mario Sunshine",
-      complete: true,
-      id: 3
-    }]);
+  // const [todos, setTodos] = useState([
+  //   {
+  //     task: "Eat Dinner",
+  //     complete: false,
+  //     id: 1
+  //   },
+  //   {
+  //     task: "Pet Cat",
+  //     complete: true,
+  //     id: 2
+  //   },
+  //   {
+  //     task: "Beat Mario Sunshine",
+  //     complete: true,
+  //     id: 3
+  //   }]);
+  const [todos, setTodos] = useState(TodoJSON)
+
   
   function addTodo(){
     let newTodo = {
