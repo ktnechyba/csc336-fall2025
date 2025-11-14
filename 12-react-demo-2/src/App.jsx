@@ -1,11 +1,11 @@
 // use effect = function to call a certain amount or based on a state for the second argument
 import { useState, useEffect } from 'react' 
 // import './App.css'
-import Home from './Home'
-import About from './About';
-import RandomPokemon from './RandomPokemon'
+import Home from './Home.jsx';
+import About from './About.jsx';
+import RandomPokemon from './RandomPokemon.jsx';
 
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
+import {BrowserRouter, Routes, Route, NavLink} from "react-router-dom"
 
 function App() {
   let hello = "I'm excited to christmas market :)";
@@ -43,17 +43,17 @@ function App() {
 
       <BrowserRouter>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/pokemon">Pokemon</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/pokemon">Pokemon</NavLink>
         </nav>
-      </BrowserRouter>
 
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/pokemon" element={<RandomPokemon/>}></Route>
       </Routes>
+      </BrowserRouter>
     </>
   )
 }
