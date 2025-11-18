@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.background.list-page {
+  background-image: linear-gradient(27deg,rgba(120, 18, 55, 0.8) 0%, rgba(199, 87, 158, 0.7) 50%, rgba(255, 158, 229, 0.6) 100%),url("assets/baking.jpg");
+}
+
+h1{
+  font-family: "Amita", serif;
+  font-size: xx-large;
+}
+
+h2{
+  font-family: "Amita", serif;
+  font-size: x-large;
+}
+
+input {
+  margin: 1em;
+  width: 22em;
+
+  overflow: auto;
+}
+textarea {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form {
+  background-image: linear-gradient(27deg,rgba(120, 18, 55, 1) 0%, rgba(4, 29, 68, 1) 50%, rgba(173, 69, 146, 1) 100%);
+  padding: 2em;
+  border-radius: 10px;
+  border: inset black;
+  width: 40vw;
+  color: white;
+  box-shadow: 4px 2px 4px 0 rgb(189, 78, 115);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+#content {
+  width: 90vw;
+}  
+

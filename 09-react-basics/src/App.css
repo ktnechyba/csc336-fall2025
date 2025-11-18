@@ -1,55 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
-html {
-  background-image: linear-gradient(27deg,rgba(120, 18, 55, 0.8) 0%, rgba(199, 87, 158, 0.7) 50%, rgba(255, 158, 229, 0.6) 100%),url("assets/baking.jpg");
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-  font-family: "Amita", serif;
-  font-size: xx-large;
+.background {
+  min-width: 100vw;
 }
 
-h2{
-  font-family: "Amita", serif;
-  font-size: x-large;
+
+.background.router-home {
+    background-color: #601339;
 }
 
-input {
-  margin: 1em;
-  width: 22em;
-
-  overflow: auto;
-}
-textarea {
-  margin-top: 1em;
-  margin-left: 1em;
-}
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#form {
-  background-image: linear-gradient(27deg,rgba(120, 18, 55, 1) 0%, rgba(4, 29, 68, 1) 50%, rgba(173, 69, 146, 1) 100%);
-  padding: 2em;
-  border-radius: 10px;
-  border: inset black;
-  width: 40vw;
-  color: white;
-  box-shadow: 4px 2px 4px 0 rgb(189, 78, 115);
+.navlink {
+    margin: 1em;
+    padding: .5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: white;
+    border-radius: 15px;
+    border: solid black 1px;
+    color: #551A8B;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+.navlink:hover {
+    background-color: #6F3676;
+    color: white;
 }
-
-#content {
-  width: 90vw;
-}  

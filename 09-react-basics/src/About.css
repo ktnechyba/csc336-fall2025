@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.background.about-page {
+    background: linear-gradient(0deg,rgba(120, 18, 55, 1) 0%, rgba(199, 87, 158, 1) 21%, rgba(255, 158, 229, 1) 36%, rgba(255, 208, 89, 1) 51%, rgba(255, 178, 122, 1) 65%, rgba(180, 103, 91, 1) 81%, rgba(96, 19, 57, 1) 100%);
+    min-height: 100vh;
+}
+
+.about-card{
+    width: 50vw;
+    background-color: white;
+    border-radius: 12px;
+    border: black solid 2px;
+    margin: 2em;
+    padding: 1em;
+    padding-right: 3em;
+    box-shadow: 4px 2px 4px 0 rgb(189, 78, 115);
+
+}
+
+.topic {
+    color: black;
+}
+
+p {
+    margin: 0.5em;
+    line-height: 1.6;
+}

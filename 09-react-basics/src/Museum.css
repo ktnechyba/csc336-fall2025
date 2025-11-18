@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.background.museum-page {
+    background: linear-gradient(0deg,rgba(255, 208, 89, 1) 0%, rgba(255, 178, 122, 1) 48%, rgba(96, 19, 57, 1) 100%);
+    min-height: 100vh;
+}
+
+#random-num {
+    width: 40vw;
+    margin: 1em;
+    padding: 2em;
+    background-color: black;
+    color: white;
+    font-family: "Fondamento", cursive;
+    font-size: large;
+}
+
+#random-num:hover {
+    background-color: white;
+    color: black;
+}
+
+h1{
+    font-family: "Fondamento", cursive;
+    font-size: xx-large;
+    color: white;
+}
+
+h2{
+    font-family: "Fondamento", cursive;
+    font-size: x-large;
+    color: white;
+
+}
+
+img {
+    border: double black 12px;
+}
+
+#artifact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
