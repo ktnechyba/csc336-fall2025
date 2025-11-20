@@ -1,5 +1,6 @@
 
 // const { MongoClient, ServerApiVersion } = require('mongodb');
+import {dotenv} from 'dotenv'
 import {MongoClient, ServerApiVersion} from 'mongodb'
 const uri = "mongodb+srv://kn9558a_db_user:@csc336-fall2025.x8mvfie.mongodb.net/?appName=csc336-fall2025";
 
