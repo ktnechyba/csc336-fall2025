@@ -1,0 +1,26 @@
+{
+    "cats": [
+        {
+            "color": "Grey and White",
+            "fur": "Short",
+            "size": "Medium",
+            "collar": "Yes",
+            "upload": "Yes",
+            "img": null,
+            "lat": 38.9377664,
+            "lng":-77.0891677,
+            "time": "12-02-2025-1357"
+        },
+        {
+            "color": "Black",
+            "fur": "Long",
+            "size": "Small",
+            "collar": "No",
+            "upload": "No",
+            "img": null,
+            "lat": 38.8951,
+            "lng":-77.0364,
+            "time": "12-02-2025-1743"
+        }
+    ]
+}
