@@ -49,4 +49,4 @@ let newArray = numbers.map((element)=> element+10); //add 10 to each element and
 
 //dist folder is the live project you can upload to run online -> need to npm run build, add "/" to the index links
 
-///npm install react router dom
+///npm install react-router-dom

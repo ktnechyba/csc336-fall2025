@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.background.about-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-card{
+    width: 50vw;
+    background-color: white;
+    border-radius: 12px;
+    border: black solid 2px;
+    margin: 2em;
+    padding: 1em;
+    padding-right: 3em;
+    box-shadow: 4px 2px 4px 0 rgb(189, 78, 115);
+
+}
+
+.topic {
+    color: black;
+}
+
+p {
+    margin: 0.5em;
+    line-height: 1.6;
+}
